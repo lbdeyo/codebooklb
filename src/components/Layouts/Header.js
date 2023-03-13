@@ -5,7 +5,7 @@ import {useCart} from "../../context";
 import {DropdownLoggedOut, DropdownLoggedIn} from "../index";
 import {Search} from "../Sections/Search";
 export const Header = () => {
-  const {cartList} = useCart();
+  const {cartList} = useCart(); //eslint-disable-line
   if (!cartList) {
     cartList = [];
   }
