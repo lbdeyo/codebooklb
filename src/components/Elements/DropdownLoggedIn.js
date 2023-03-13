@@ -5,7 +5,7 @@ import {toast} from "react-toastify";
 
 export const DropdownLoggedIn = ({setDropdown}) => {
   const navigate = useNavigate();
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState({}); //eslint-disable-line
 
   useEffect(() => {
     async function fetchData() {
