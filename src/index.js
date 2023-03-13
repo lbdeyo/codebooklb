@@ -10,7 +10,7 @@ import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <React>
     <Router>
       <CartProvider>
         <FilterProvider>
@@ -24,5 +24,5 @@ root.render(
         </FilterProvider>
       </CartProvider>
     </Router>
-  </React.StrictMode>
+  </React>
 );
