@@ -6,9 +6,7 @@ import {DropdownLoggedOut, DropdownLoggedIn} from "../index";
 import {Search} from "../Sections/Search";
 export const Header = () => {
   const {cartList} = useCart(); //eslint-disable-line
-  if (!cartList) {
-    cartList = [];
-  }
+
   const [darkMode, setDarkMode] = useState(
     JSON.parse(localStorage.getItem("darkMode")) || false
   );
